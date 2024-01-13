@@ -82,6 +82,15 @@ a .sup{
   left: 105%;
 }
 
+a .sub{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 50%;
+  font-weight: 700;
+  font-size: 10.5px;
+}
+
 nav .links a:hover{
   color: var(--hover-color);
 }

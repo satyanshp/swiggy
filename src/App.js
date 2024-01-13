@@ -88,7 +88,10 @@ function App() {
                 key={`link-${item.name}-${index}`}
                 className="center"
               >
-                <Icon icon={item.icon} fontSize={20} fontWeight={700} />
+                <span className="center" style={{position:'relative'}}>
+                  <Icon icon={item.icon} fontSize={20} fontWeight={700} />
+                  {index === 4 && <span className="sub">0</span>}
+                </span>
                 <p>{item.name}</p>
                 {index === 1 && <span className="sup">NEW</span>}
               </a>
