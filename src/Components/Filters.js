@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './Styles/section3.css';
 
-const Filters = () => {
+const Filters = ({nav}) => {
     const filterArr = [
         "Sort By",
         "Fast Delivery",
@@ -23,7 +23,7 @@ const Filters = () => {
         }
     }
   return (
-    <section className='filters' id='filters'>
+    <section className='filters' id={nav?'':'filters'}>
         <div className={`${selected.length>0&&'selected'} filter_tags`}>
             {selected.length>0&&<span className='filter_applied'>{selected.length}</span>}
             <p>Filter</p>

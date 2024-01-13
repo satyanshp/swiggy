@@ -9,7 +9,7 @@ const Section3 = () => {
   return (
     <div className='infinite_scroll'>
         <Layout header={'Restaurants with online food delivery in Delhi'} arrow={false}>
-            <Filters/>
+            <Filters nav={false}/>
             <section className='infinite_cards'>
                 {
                     itemArray.map((item,index) => (
