@@ -134,7 +134,6 @@ const Section2 = () => {
     const handleScroll = ()=>{
         setTop(slide?slide.scrollLeft===0:true);
         setScrolled(Math.round(slide?.scrollWidth-slide?.scrollLeft) === slide?.clientWidth);
-        console.log('scrolled');
     }
     useEffect(() => {
       if(slide)
