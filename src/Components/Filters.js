@@ -10,7 +10,7 @@ const Filters = ({nav}) => {
         "Pure Veg",
         "Offers",
         "Rs. 300-Rs. 600",
-        "Less than 300",
+        "Less than Rs. 300",
     ]
     const [selected, setSelected] = useState([]);
     const handelFilter = (index) => {
