@@ -116,12 +116,24 @@ function App() {
           "Best Restaurants in Kota",
           "Best Restaurants in Kota",
           "Best Restaurants in Kota",
+          "Best Restaurants in Kota",
+          "Best Restaurants in Kota",
+          "Best Restaurants in Kota",
+          "Best Restaurants in Kota",
+          "Best Restaurants in Kota",
+          "Best Restaurants in Kotaa",
         ]}
       />
       <div style={{width:'100%',height:'64px'}}/>
       <Tags
         header={"Best Cuisines Near Me"}
         array={[
+          "Thai Restaurant Near Me",
+          "Thai Restaurant Near Me",
+          "Thai Restaurant Near Me",
+          "Thai Restaurant Near Me",
+          "Thai Restaurant Near Me",
+          "Thai Restaurant Near Me",
           "Thai Restaurant Near Me",
           "Thai Restaurant Near Me",
           "Thai Restaurant Near Me",
