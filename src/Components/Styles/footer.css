@@ -1,0 +1,130 @@
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+footer > section:last-child{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(2, 6, 12);
+    padding: 48px 17.5% 7rem;
+    column-gap: 5%;
+}
+
+
+
+footer > section:last-child h1{
+    color: rgba(255, 255, 255, 0.92);
+    text-transform: capitalize;
+}
+
+footer > section:last-child p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+}
+
+footer > section:last-child h3{
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+footer > section:last-child a{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
+
+footer > section:last-child .grid_0{
+    grid-area: 1 / 1 / 5; 
+}
+
+footer > section:last-child .grid_3{
+    grid-column-start: 3;
+    margin-top: -100px;
+}
+
+footer > section:last-child .grid_4{
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.grid_item{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+
+.grid_0{
+    text-align: left;
+}
+
+.grid_0 > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.grid_0 > div > div{
+    margin-top: -4px;
+    margin-right: 8px;
+}
+
+.grid_item button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: unset;
+    box-shadow: unset;
+    height: 32px;
+    cursor: pointer;
+    padding: 4px 8px;
+    width: 100%;
+    max-width: 120px;
+    text-align: initial;
+    border-radius: 8px; 
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.6); 
+}
+
+.grid_item button div{
+    display: flex;
+    align-items: center;
+}
+
+footer section:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 104px;
+    background-color: rgb(240, 240, 245);
+    margin-top: 34px;
+}
+
+footer section:first-child div:first-child{
+    display: block;
+    width: 428px;
+    margin: auto 64px auto 0px;
+    max-height: 60px;
+    -webkit-font-smoothing: antialiased;
+    text-align: left;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    color: rgba(2, 6, 12, 0.75); 
+}
+
+footer section:first-child div:last-child{
+    display: flex;
+    align-items: center;
+}
+
+footer section:first-child div:last-child img{
+    flex-basis: 50%;
+    height: 64px;
+    max-width: 208px; 
+    margin-inline: 12px;
+}

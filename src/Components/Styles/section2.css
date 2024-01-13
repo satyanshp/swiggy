@@ -1,0 +1,14 @@
+.card_container .card_item{
+    padding-right: 32px; 
+    transition: 0.2s ease-in;
+}
+.card_container .card_item:first-child{
+    padding-left: 16px; 
+}
+.card_container .card_item:last-child{
+    padding-right: 16px; 
+}
+
+.card_item:hover{
+    transform: scale(0.95);
+}

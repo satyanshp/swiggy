@@ -1,0 +1,82 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.card_image_container{
+    position: relative;
+    width: 273px;
+    min-height: 182px;
+    border-radius: 16px;
+    overflow: hidden;
+    filter: drop-shadow(rgba(0, 0, 0, 0.1) 0px 2px 8px); 
+    display: flex;
+    align-items: flex-end;
+}
+
+.card_image_container img{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.card_image_container h2{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%); 
+    color: #fff;
+}
+
+.card h1{
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+    overflow: hidden;
+    width: 100%;
+}
+
+.card_details_line{
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    gap: 2px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75);
+    overflow: hidden;
+    width: 100%;
+}
+
+.card .dot{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: rgba(2, 6, 12, 0.75);
+    margin-inline: 5px;
+}
+
+.card p{
+    -webkit-font-smoothing: antialiased;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.6);
+    width: 100%;
+    margin-block: 2px;
+}

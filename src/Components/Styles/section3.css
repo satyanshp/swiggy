@@ -1,0 +1,62 @@
+.infinite_scroll{
+    text-align: left;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow-x: auto;
+    gap: 0.5rem;
+}
+
+.filter_tags{
+    border-radius: 18px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(226, 226, 231);
+    padding: 9px 12px;
+    display: flex;
+    width: max-content;
+    align-items: center;
+    gap: 8px;
+    box-shadow: rgba(2, 6, 12, 0.04) 0px 2px 12px; 
+    cursor: pointer;
+}
+
+.filter_tags.selected{
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+    background-color: rgba(2, 6, 12, 0.15);
+    border: 1px solid rgb(54, 57, 62);
+    padding: 9px 12px;
+    gap: 8px; 
+}
+
+.filter_tags p{
+    -webkit-font-smoothing: antialiased;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.3px;
+    color: rgba(2, 6, 12, 0.75); 
+}
+
+.infinite_cards{
+    margin: 32px 16px; 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 32px;
+}
+
+.infinite_card_item{
+    flex-basis: 22.75%;
+    transition: 0.2s ease-in;
+}
+
+.infinite_card_item:hover{
+    transform: scale(0.95);
+}

@@ -1,0 +1,10 @@
+.food_container > div{
+    display: flex;
+    min-width: 144px;
+    height: 180px; 
+}
+
+.food_container > div > img{
+    object-fit: cover;
+    width: 100%;
+}

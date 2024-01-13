@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: 0.3 ease-in;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+}
+
+:root{
+  --primay-color: #3d4152;
+  --hover-color: #fc8019;
+  /* --hover-color: #ffa700; */
+}
