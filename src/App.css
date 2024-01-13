@@ -28,13 +28,30 @@ header nav{
   min-height: 80px;
 }
 
+nav .main_head a{
+  margin-top: 6px;
+}
+
 nav .main_head{
-  gap: 35px;
+  gap: 46px;
+  cursor: pointer;
 }
 
 nav .main_head > div{
   gap: 6px;
  font-size: 10.8px; 
+}
+
+nav .main_head > div:hover h3{
+  color: var(--hover-color);
+}
+
+nav .main_head > div:hover p{
+  opacity: 0.8;
+}
+
+nav .main_head > div:hover h3::after{
+  background-color: var(--hover-color);
 }
 
 nav .main_head > div > h3 {

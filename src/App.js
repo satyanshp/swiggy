@@ -63,7 +63,7 @@ function App() {
           ) : (
             <nav className="center">
               <div className="center main_head">
-                <a href="http://localhost">
+                <a href="http://localhost:3000">
                   <svg
                     class="_8pSp-"
                     viewBox="0 0 559 825"
