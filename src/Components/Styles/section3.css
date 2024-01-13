@@ -60,3 +60,17 @@
 .infinite_card_item:hover{
     transform: scale(0.95);
 }
+
+.filter_applied{
+    background: rgb(241, 87, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 19px;
+    width: 19px;
+    position: relative;
+    font-size: 12px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
