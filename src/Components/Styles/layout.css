@@ -31,6 +31,11 @@
     align-items: center;
     justify-content: center;
     border: none;
+    cursor: pointer;
+}
+
+.arrow button:disabled{
+    opacity: 0.5;
 }
 
 .bottom_border{

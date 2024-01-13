@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Layout from './Layout'
 import Card from './Card'
 import './Styles/section2.css'
@@ -115,13 +115,37 @@ export const itemArray = [
 ]
 
 const Section2 = () => {
+    const [scroll, setScroll] = useState(false);
+    var slide = document.getElementById("card_container");
+    const leftScroll = ()=>{
+        if(slide){
+            slide.scrollLeft = slide.scrollLeft - 500;
+            console.log(slide?.scrollHeight - slide?.scrollTop === slide?.clientHeight)
+        }
+        setScroll(!scroll)
+    }
+    const rightScroll = ()=>{
+        if(slide)
+        slide.scrollLeft = slide.scrollLeft + 500;   
+        setScroll(!scroll)
+    }
+    const [top, setTop] = useState(true);
+    const [scrolled, setScrolled] = useState(false);
+    useEffect(() => {
+      setTop(slide?slide.scrollLeft===0:true);
+      setScrolled(Math.round(slide?.scrollWidth-slide?.scrollLeft) === slide?.clientWidth);
+    }, [scroll])
   return (
     <div>
         <Layout
             header={'Top restaurant chains in Delhi'}
             arrow
+            leftScroll={leftScroll}
+            rightScroll={rightScroll}
+            top={top}
+            scrolled={scrolled}
         >
-           <div className='overflow_container card_container'>
+           <div className='overflow_container card_container' id='card_container'>
                 {
                     itemArray.map((item,index)=>(
                         <div key={`food-item-${index}`} className='card_item'><Card item={item}/></div>
