@@ -13,7 +13,7 @@ const Section3 = () => {
             <section className='infinite_cards'>
                 {
                     itemArray.map((item,index) => (
-                        <div key={index} className='infinite_card_item'><Card item={item} width={'100%'} /></div>
+                        <div key={index} className='infinite_card_item'><Card sec3 item={item} width={'100%'} /></div>
                     ))
                 }
             </section>

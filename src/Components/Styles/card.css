@@ -34,6 +34,11 @@
     padding-bottom: 8px;
     background: linear-gradient(rgba(27, 30, 36, 0) 0%, rgb(27, 30, 36) 84.21%); 
     color: #fff;
+    overflow-x: auto;
+    display: flex;
+}
+.card_image_container h2::-webkit-scrollbar{
+    display: none;
 }
 
 .card h1{
